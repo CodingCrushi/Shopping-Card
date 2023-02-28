@@ -2,7 +2,7 @@ import React , {useContext} from 'react'
 import { PRODUCTS } from '../../products'
 import { ShopContext } from "../../context/shop-content"
 import  CartItem  from './cart-item'
-
+import './cart.css'
 
 export default function Cart  () {
   const {cardItems} = useContext(ShopContext)
