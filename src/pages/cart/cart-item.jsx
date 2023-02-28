@@ -16,7 +16,6 @@ export default function CartItem(props) {
             <p>${price}</p>
             <div className="countHandler">
                 <button onClick={() => removeFromCart(id)}> - </button>
-                {/* <input value={cardItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value) , id)}/> */}
                 <input value={cardItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value) , id)}/>
                 <button onClick={() => addToCard(id)}> + </button>
             </div>

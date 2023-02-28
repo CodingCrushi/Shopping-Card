@@ -13,6 +13,18 @@ const getDefualtCard = () =>{ //Numers we used in the how many items you take
 
 export const ShopContextProvider = (props) => {
   const [cardItems , setCardItems] = useState(getDefualtCard())
+  
+  const getToatalAmount =  () => {
+    let totalAmount = 0;
+    for (const item in cardItems){
+      if(cardItems[item] > 0) {
+        let itemInfo = PRODUCTS.find((product) => product.id === Number(item))
+        totalAmount += cardItems[item] * itemInfo.price
+      }
+    }
+
+    return totalAmount
+  }
 
   const addToCard = (itemId) => {
     setCardItems((prev) => ({...prev , [itemId]: prev[itemId] + 1})); //This the item id  or key 1 : 2 value 
@@ -25,7 +37,7 @@ export const ShopContextProvider = (props) => {
   const updateCartItemCount = (newAmount , itemId) =>{
     setCardItems((prev) => ({...prev , [itemId]: newAmount}))
   }
-  const contextValue = { cardItems , addToCard , removeFromCart , updateCartItemCount}
+  const contextValue = { cardItems , addToCard , removeFromCart , updateCartItemCount ,getToatalAmount}
 
 
   return (
