@@ -3,7 +3,9 @@ import { ShopContext } from "../../context/shop-content"
 
 export default function Product(props) {
     const {id , productName , price , productImage} = props.data ;
-    const { addToCard} = useContext(ShopContext)
+    const { addToCard , cardItems} = useContext(ShopContext)
+
+    const cardItemAmount = cardItems[id] //check the amount of the specific part by id
   return (
     <div className='product'>
         <img src={productImage} alt="" />
@@ -14,7 +16,8 @@ export default function Product(props) {
             <p>${price}</p>
         </div>
         <button className='addToCartBttn' onClick={() => addToCard(id)}>
-          Add To Cart</button>
+          Add To Cart {cardItemAmount > 0 && <>({cardItemAmount})</>}{/* if bigger that the 0 show the numbers of that */}
+          </button>
     </div>
   )
 }
