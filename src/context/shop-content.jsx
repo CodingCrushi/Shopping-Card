@@ -5,7 +5,7 @@ export const ShopContext = createContext(null)
 
 const getDefualtCard = () =>{ //Numers we used in the how many items you take
   let cart = {};
-  for(let i = 0 ; i < PRODUCTS.length ; i++){
+  for(let i = 1 ; i < PRODUCTS.length +1 ; i++){
     cart[i] = 0 //start from which number
   }
   return cart
