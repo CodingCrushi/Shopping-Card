@@ -1,4 +1,4 @@
-# Shopping Card
+H# Shopping Card
 
 This project has been developed using React and CSS. Its user-friendly interface ensures that you can easily add items to your shopping cart, keep track of the total amount of money spent, and manage your shopping cart efficiently.
 
@@ -22,7 +22,7 @@ This project has been developed using React and CSS. Its user-friendly interface
 
 ## Credits
 
-- Developed by [Your Name] (@yourusername)
+- Developed by Homayoun
 
 ## License
 
