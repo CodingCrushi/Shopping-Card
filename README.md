@@ -1,31 +1,33 @@
-# Getting Started with Create React App
+# Shopping Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been developed using React and CSS. Its user-friendly interface ensures that you can easily add items to your shopping cart, keep track of the total amount of money spent, and manage your shopping cart efficiently.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add items to shopping cart
+- View the total amount of money spent
+- Manage your shopping cart
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use the App
 
-### `npm test`
+1. Clone the repository onto your local machine
+2. Run `npm install` to install all the dependencies
+3. Run `npm start` to start the app
+4. Navigate to `http://localhost:3000` on your web browser to launch the app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Credits
 
-### `npm run build`
+- Developed by [Your Name] (@yourusername)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Shopping Card Project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
